@@ -2,10 +2,10 @@
 Employee Management Api Loopback 4
 1) -> cd employee-management
 build project
-1) -> docker-compose up
+2) -> docker-compose up
 
-2) -> docker exec -it node_backend bash
-   -> npm run migrate
+3) -> docker exec -it node_backend bash
+4) -> npm run migrate
    
    
    
