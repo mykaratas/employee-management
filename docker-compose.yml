@@ -16,6 +16,8 @@ services:
     container_name: postgres
     environment:
       POSTGRES_PASSWORD: admin
+      POSTGRES_USER: postgres
+      POSTGRES_DB: employee_main_db
     ports:
         - '5432:5432'
     volumes:
