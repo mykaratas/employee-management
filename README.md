@@ -8,7 +8,6 @@ build project
 4) -> npm run migrate
    
    
-   
 POSTMAN COLLECTION
 https://www.getpostman.com/collections/3d14f1c89451377aa856
 
