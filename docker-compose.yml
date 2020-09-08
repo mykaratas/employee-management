@@ -1,0 +1,22 @@
+version: '3'
+services:
+   node_backend:
+      container_name: node_backend
+      build: ./ems_backend/
+      depends_on:
+        - pg
+      ports:
+         - '3000:3000'
+      volumes: 
+         - './ems_backend:/home/node/app'
+#     command: "npm start"
+
+   pg:
+    image: 'postgres:12'
+    container_name: postgres
+    environment:
+      POSTGRES_PASSWORD: admin
+    ports:
+        - '5432:5432'
+    volumes:
+        - './ems_pg_data/db_data:/var/lib/postgresql/data'
